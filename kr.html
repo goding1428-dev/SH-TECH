@@ -1,48 +1,23 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>한국어 가이드</title>
+    <title>가이드 보기</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0; /* 배경색 (약간 회색) */
-            text-align: center;
-        }
-        .guide-container {
-            max-width: 800px; /* PC에서 볼 때 너무 커지지 않게 제한 */
-            margin: 0 auto;
-            background-color: white;
-        }
-        img {
-            width: 100%;      /* 핸드폰 가로 폭에 꽉 맞춤 */
-            display: block;   /* 이미지 사이의 미세한 간격 제거 */
-            margin-bottom: 0; /* 페이지가 이어져 보이게 설정 */
-        }
-        .back-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: rgba(0,0,0,0.6);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 14px;
+        body { margin: 0; padding: 0; background-color: #333; }
+        .wrapper { width: 100%; }
+        img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
         }
     </style>
 </head>
 <body>
-
-    <div class="guide-container">
-        <img src="kr_1.jpg" alt="가이드 1페이지">
-        <img src="kr_2.jpg" alt="가이드 2페이지">
-        <img src="kr_3.jpg" alt="가이드 3페이지">
-        </div>
-
-    <a href="index.html" class="back-btn">뒤로가기</a>
-
+    <div class="wrapper">
+        <img src="kr_1.jpg">
+        <img src="kr_2.jpg">
+    </div>
 </body>
 </html>
