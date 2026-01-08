@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Work Instruction Guide</title>
+
+  <style>
+    :root {
+      --kr-grad: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+      --cn-grad: linear-gradient(135deg, #cb2d3e 0%, #ef473a 100%);
+      --vn-grad: linear-gradient(135deg, #f2994a 0%, #f2c94c 100%);
+      --th-grad: linear-gradient(135deg, #1d976c 0%, #93f9b9 100%);
+      --np-grad: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);
+      --uz-grad: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pretendard', -apple-system, sans-serif;
+      background: #f4f7f9;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: #ffffff;
+      width: 90%;
+      max-width: 420px;
+      padding: 45px 25px 30px 25px;
+      border-radius: 40px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .logo-container { margin-bottom: 30px; }
+    .logo-img { width: 90%; max-width: 320px; height: auto; }
+
+    .title { font-size: 26px; font-weight: 800; color: #1a1a1a; margin-bottom: 6px; }
+    .subtitle { font-size: 14px; color: #7d7d7d; margin-bottom: 35px; line-height: 1.5; }
+
+    .btn-container { display: flex; flex-direction: column; gap: 12px; }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      text-decoration: none;
+      color: white;
+      border-radius: 22px;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .flag-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      margin-right: 15px;
+      border: 2px solid rgba(255,255,255,0.4);
+      flex-shrink: 0;
+    }
+
+    .btn-text { flex-grow: 1; text-align: left; }
+    .lang-name { display: block; font-size: 17px; font-weight: 700; letter-spacing: -0.5px; }
+    .lang-sub { display: block; font-size: 11px; opacity: 0.8; font-weight: 400; text-transform: uppercase; }
+
+    /* 각 버튼 배경 및 국기 이미지 */
+    .kr { background: var(--kr-grad); }
+    .kr .flag-icon { background-image: url('https://flagcdn.com/w160/kr.png'); }
+    .cn { background: var(--cn-grad); }
+    .cn .flag-icon { background-image: url('https://flagcdn.com/w160/cn.png'); }
+    .vn { background: var(--vn-grad); }
+    .vn .flag-icon { background-image: url('https://flagcdn.com/w160/vn.png'); }
+    .th { background: var(--th-grad); }
+    .th .flag-icon { background-image: url('https://flagcdn.com/w160/th.png'); }
+    .np { background: var(--np-grad); }
+    .np .flag-icon { background-image: url('https://flagcdn.com/w160/np.png'); }
+    .uz { background: var(--uz-grad); }
+    .uz .flag-icon { background-image: url('https://flagcdn.com/w160/uz.png'); }
+
+    .btn:hover { transform: scale(1.02); filter: brightness(1.08); }
+
+    .footer {
+      margin-top: 40px;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+
+    .footer-main {
+      font-size: 13px;
+      color: #333;
+      letter-spacing: 2px;
+      font-weight: 800;
+      opacity: 0.8;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    /* 아주 작게 추가된 크레딧 */
+    .footer-sub {
+      font-size: 9px;
+      color: #bbb;
+      letter-spacing: 1px;
+      font-weight: 400;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <div class="logo-container">
+    <img src="logo.png" class="logo-img" alt="LOGO">
+  </div>
+
+  <div class="title">제안 작성 가이드</div>
+  <div class="subtitle">Suggestion Writing Guide</div>
+
+  <div class="btn-container">
+    <a class="btn kr" href="kr.html">
+      <div class="flag-icon"></div>
+      <div class="btn-text"><span class="lang-name">한국어</span><span class="lang-sub">KOREAN</span></div>
+    </a>
+    <a class="btn cn" href="cn.html">
+      <div class="flag-icon"></div>
+      <div class="btn-text"><span class="lang-name">中文</span><span class="lang-sub">CHINESE</span></div>
+    </a>
+    <a class="btn vn" href="vn.html">
+      <div class="flag-icon"></div>
+      <div class="btn-text"><span class="lang-name">Tiếng Việt</span><span class="lang-sub">VIETNAMESE</span></div>
+    </a>
+    <a class="btn th" href="th.html">
+      <div class="flag-icon"></div>
+      <div class="btn-text"><span class="lang-name">ภาษาไทย</span><span class="lang-sub">THAI</span></div>
+    </a>
+    <a class="btn np" href="np.html">
+      <div class="flag-icon"></div>
+      <div class="btn-text"><span class="lang-name">नेपाली</span><span class="lang-sub">NEPALI</span></div>
+    </a>
+    <a class="btn uz" href="uz.html">
+      <div class="flag-icon"></div>
+      <div class="btn-text"><span class="lang-name">Oʻzbekcha</span><span class="lang-sub">UZBEK</span></div>
+    </a>
+  </div>
+
+  <div class="footer">
+    <span class="footer-sub">Made by : SHTECH QA TEAM</span>
+  </div>
+</div>
+
+</body>
+</html>
